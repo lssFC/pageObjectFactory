@@ -100,49 +100,6 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='center_column']/div/div/div[3]/h1")
 	WebElement productNameOnDetailsPage;
 
-	////////////////
-	@FindBy(id = "PreviewFrame")
-	WebElement homePageIframe;
-
-	@FindBy(id = "customer_register_link")
-	WebElement signUpLink;
-
-	@FindBy(id = "FirstName")
-	WebElement firstName;
-
-	@FindBy(id = "LastName")
-	WebElement lastName;
-
-	@FindBy(id = "Email")
-	WebElement email;
-
-	@FindBy(id = "CreatePassword")
-	WebElement createPassword;
-
-	@FindBy(css = "input.btn")
-	WebElement createAccount;
-
-	@FindBy(xpath = "//*[@id='shopify-section-header']/div/div[2]/span")
-	WebElement registrationMessage;
-
-	@FindBy(xpath = "//*[@id='customer_login_link']")
-	WebElement loginLink;
-
-	@FindBy(id = "CustomerEmail")
-	WebElement loginEmail;
-
-	@FindBy(xpath = ".//*[@id='CustomerPassword']")
-	WebElement password;
-
-	@FindBy(xpath = ".//*[@id='customer_login']/p[1]/input")
-	WebElement clickOnSignIn;
-
-	@FindBy(xpath = "//*[@id='customer_logout_link']")
-	WebElement logout;
-
-	@FindBy(xpath = "//*[@id='MainContent']/div/p")
-	WebElement userNameField;
-
 	/*
 	 * Creating Homepage constructor which takes the argument we are
 	 * initializing the web element object at the runtime (It initializes all
@@ -278,13 +235,7 @@ public class HomePage {
 
 	}
 
-	public void clickLogout() {
-		logout.click();
-		log.info("Clicking on Logout - at web element path :-" + logout.toString());
-	}
-
 	public String getUserName() {
-
 		String userName = newCreatedUsername.getText();
 		log.info("returning the username :" + userName + " - at web element path :-" + newCreatedUsername.toString());
 		return userName;

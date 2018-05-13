@@ -58,14 +58,19 @@ public class MyAccountPage {
 		log.info("Clicked on submit button -at web element :- " + submitButton.toString());
 	}
 
+	/*
+	 * This method us to execute back navigation on My account page Steps: 1.
+	 * Navigate to Order History Page 2. On My account page 3. Navigate to Order
+	 * Slip Page 4. Check the page title 5. Verify back navigation works
+	 * correctly.
+	 * 
+	 */
 
-
-
-	public void backNavigation(){
+	public void backNavigation() {
 		String myAccountPage = "My account - My Store";
 		String orderHistoryPage = "Order history - My Store";
 		String creditSlipPage = "Order slip - My Store";
-		
+
 		String pageTitle1 = driver.getTitle();
 		Assert.assertEquals(pageTitle1, myAccountPage);
 		orderOption.click();

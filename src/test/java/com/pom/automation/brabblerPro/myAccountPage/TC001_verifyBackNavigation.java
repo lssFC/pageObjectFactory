@@ -21,7 +21,6 @@ public class TC001_verifyBackNavigation extends TestBase {
 	public static final Logger log = Logger.getLogger(TC001_verifyBackNavigation.class.getName());
 	MyAccountPage myAccountPage;
 
-	
 	@BeforeClass
 	public void setUp() {
 		init();

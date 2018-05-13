@@ -5,6 +5,7 @@
     <classes>
       <class name="com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCartForUnauthneticatedUser"/>
       <class name="com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials"/>
+      <class name="com.pom.automation.brabblerPro.myAccountPage.TC001_verifyBackNavigation"/>
       <class name="com.pom.automation.brabblerPro.homePage.TC002_verifyRegistrationProcess"/>
     </classes>
   </test> <!-- Test -->

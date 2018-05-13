@@ -26,7 +26,7 @@ public class TestBase {
 	String url = "http://automationpractice.com/index.php";
 	String browser = "firefox";
 
-	// Lauch browser and initializing the configuration
+	// Launch browser and initializing the configuration
 	public void init() {
 		selectBrowser(browser);
 		getUrl(url);
@@ -39,7 +39,7 @@ public class TestBase {
 	 * 2.webdriver.firefox.marionette properties in windows machine.
 	 */
 
-	// Selecting browser
+	// Method for : Selecting browser
 	public void selectBrowser(String browser) {
 		System.out.println(System.getProperty("os.name"));
 		if (browser.equals("firefox")) {
@@ -63,6 +63,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 
+	// Method for : Capture and restore screenshots when test passes or fails
 	public void getScreenShot(String name) {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
