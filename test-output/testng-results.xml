@@ -1,57 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<a href='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyAddToCartForUnauthneticatedUser_13_05_2018_07_28_45.png'> <img src='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyAddToCartForUnauthneticatedUser_13_05_2018_07_28_45.png' height='120' width='120'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[<a href='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyingRegistration_13_05_2018_07_30_59.png'> <img src='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyingRegistration_13_05_2018_07_30_59.png' height='120' width='120'/> </a>]]>
+      <![CDATA[<a href='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyBackNavigation_13_05_2018_11_02_58.png'> <img src='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyBackNavigation_13_05_2018_11_02_58.png' height='120' width='120'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="166187" started-at="2018-05-13T17:28:14Z" finished-at="2018-05-13T17:31:00Z">
+  <suite name="Default suite" duration-ms="214287" started-at="2018-05-13T20:59:25Z" finished-at="2018-05-13T21:02:59Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="166187" started-at="2018-05-13T17:28:14Z" finished-at="2018-05-13T17:31:00Z">
-      <class name="com.pom.automation.brabblerPro.homePage.TC002_verifyRegistrationProcess">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC002_verifyRegistrationProcess@271053e1]" name="setUp" is-config="true" duration-ms="16316" started-at="2018-05-13T19:29:23Z" finished-at="2018-05-13T19:29:40Z">
+    <test name="Default test" duration-ms="214287" started-at="2018-05-13T20:59:25Z" finished-at="2018-05-13T21:02:59Z">
+      <class name="com.pom.automation.brabblerPro.myAccountPage.TC001_verifyBackNavigation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.automation.brabblerPro.myAccountPage.TC001_verifyBackNavigation@3c0ecd4b]" name="setUp" is-config="true" duration-ms="16324" started-at="2018-05-13T22:59:25Z" finished-at="2018-05-13T22:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyingRegistration()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC002_verifyRegistrationProcess@271053e1]" name="verifyingRegistration" duration-ms="80181" started-at="2018-05-13T19:29:40Z" finished-at="2018-05-13T19:31:00Z">
+        <test-method status="PASS" signature="verifyBackNavigation()[pri:0, instance:com.pom.automation.brabblerPro.myAccountPage.TC001_verifyBackNavigation@3c0ecd4b]" name="verifyBackNavigation" duration-ms="197890" started-at="2018-05-13T22:59:41Z" finished-at="2018-05-13T23:02:59Z">
           <reporter-output>
             <line>
-              <![CDATA[<a href='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyingRegistration_13_05_2018_07_30_59.png'> <img src='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyingRegistration_13_05_2018_07_30_59.png' height='120' width='120'/> </a>]]>
+              <![CDATA[<a href='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyBackNavigation_13_05_2018_11_02_58.png'> <img src='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyBackNavigation_13_05_2018_11_02_58.png' height='120' width='120'/> </a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyingRegistration -->
-      </class> <!-- com.pom.automation.brabblerPro.homePage.TC002_verifyRegistrationProcess -->
-      <class name="com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCartForUnauthneticatedUser">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCartForUnauthneticatedUser@553f17c]" name="setUp" is-config="true" duration-ms="17136" started-at="2018-05-13T19:28:14Z" finished-at="2018-05-13T19:28:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAddToCartForUnauthneticatedUser()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCartForUnauthneticatedUser@553f17c]" name="verifyAddToCartForUnauthneticatedUser" duration-ms="14806" started-at="2018-05-13T19:28:31Z" finished-at="2018-05-13T19:28:46Z">
-          <reporter-output>
-            <line>
-              <![CDATA[<a href='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyAddToCartForUnauthneticatedUser_13_05_2018_07_28_45.png'> <img src='C:\Users\User\workspace\brabblerPro\src\main\java\com\test\automation\uiAutomation\screenshot\verifyAddToCartForUnauthneticatedUser_13_05_2018_07_28_45.png' height='120' width='120'/> </a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCartForUnauthneticatedUser -->
-      </class> <!-- com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCartForUnauthneticatedUser -->
-      <class name="com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials@4f7d0008]" name="setUp" is-config="true" duration-ms="15313" started-at="2018-05-13T19:28:46Z" finished-at="2018-05-13T19:29:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials@4f7d0008]" name="setUp" is-config="true" duration-ms="15042" started-at="2018-05-13T19:29:01Z" finished-at="2018-05-13T19:29:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyLoginWithInvalidCredentials()[pri:0, instance:com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials@4f7d0008]" name="VerifyLoginWithInvalidCredentials" duration-ms="7303" started-at="2018-05-13T19:29:16Z" finished-at="2018-05-13T19:29:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyLoginWithInvalidCredentials -->
-      </class> <!-- com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyBackNavigation -->
+      </class> <!-- com.pom.automation.brabblerPro.myAccountPage.TC001_verifyBackNavigation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

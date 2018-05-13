@@ -29,6 +29,9 @@ public class TC002_verifyRegistrationProcess extends TestBase {
 		init();
 	}
 
+	/*
+	 * This test case is to verify registration process works correctly.
+	 */
 	@Test
 	public void verifyingRegistration() {
 		try {

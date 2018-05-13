@@ -19,6 +19,7 @@ import org.testng.Reporter;
 public class TestBase {
 
 	// Logs gets generated for this class..
+
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 
 	public WebDriver driver;
@@ -33,35 +34,25 @@ public class TestBase {
 		PropertyConfigurator.configure(log4jConfPath);
 	}
 
+	/**
+	 * Please try either 1. webdriver.gecko.driver OR
+	 * 2.webdriver.firefox.marionette properties in windows machine.
+	 */
+
 	// Selecting browser
 	public void selectBrowser(String browser) {
 		System.out.println(System.getProperty("os.name"));
-		if (System.getProperty("os.name").contains("Window")) {
-			if (browser.equals("chrome")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.chrome.driver",
-						System.getProperty("user.dir") + "/drivers/chromedriver.exe");
-				driver = new ChromeDriver();
-			} else if (browser.equals("firefox")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.gecko.driver",
-						System.getProperty("user.dir") + "/drivers/geckodriver.exe");
-				driver = new FirefoxDriver();
+		if (browser.equals("firefox")) {
+			System.out.println(System.getProperty("user.dir"));
 
-			}
-		} else if (System.getProperty("os.name").contains("Mac")) {
-			if (browser.equals("chrome")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
-				driver = new ChromeDriver();
+			// System.setProperty("webdriver.gecko.driver",
+			// System.getProperty("user.dir") + "/drivers/geckodriver.exe");
 
-			} else if (browser.equals("firefox")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.firefox.marionette",
-						System.getProperty("user.dir") + "/drivers/geckodriver");
-				driver = new FirefoxDriver();
-			}
+			// foe MAC os
+			System.setProperty("webdriver.firefox.marionette", System.getProperty("user.dir") + "/drivers/geckodriver");
+			driver = new FirefoxDriver();
 		}
+
 	}
 
 	// Launching the main baseUrl

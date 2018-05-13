@@ -24,6 +24,10 @@ public class TC003_verifyAddToCartForUnauthneticatedUser extends TestBase {
 		init();
 	}
 
+	/*
+	 * This test case is to add to cart functionality when user has not logged
+	 * in
+	 */
 	@Test
 	public void verifyAddToCartForUnauthneticatedUser() {
 		try {

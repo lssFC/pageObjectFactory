@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCart">
+      <class name="com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials">
         <methods>
-          <include name="verifyAddToCart"/>
           <include name="setUp"/>
+          <include name="VerifyLoginWithInvalidCredentials"/>
         </methods>
-      </class> <!-- com.pom.automation.brabblerPro.homePage.TC003_verifyAddToCart -->
+      </class> <!-- com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

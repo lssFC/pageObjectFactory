@@ -81,7 +81,7 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img")
 	WebElement moveToProductImage;
 
-	//@FindBy(xpath = "//div[@id='layer_cart']/div/div/div[2]/span")
+	// @FindBy(xpath = "//div[@id='layer_cart']/div/div/div[2]/span")
 	@FindBy(xpath = "//span[@id='layer_cart_product_title']")
 	WebElement productNameOnPopup;
 
@@ -154,6 +154,13 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	/*
+	 * This test case is to verify the new user registration
+	 * 
+	 * ===Steps: 1. Navigate to home page 2. Click on sign in link 3. Enter
+	 * email address and password field 4. click on submit button
+	 * 
+	 */
 	public void loginToApplication(String emailAddress, String password) {
 		signIn.click();
 		log.info("Clicked on Sign in and  -at web element :- " + signIn.toString());
@@ -171,6 +178,14 @@ public class HomePage {
 
 	}
 
+	/*
+	 * This test case is to verify the new user registration
+	 * 
+	 * ===Steps: 1. Navigate to home page 2. Click on sign in link 3. Enter new
+	 * email address for registration 4. On registration page, enter all valid
+	 * and mandatory fields
+	 * 
+	 */
 	public void registeringUser(String val_firstName, String val_lastName, String val_emailAddress, String val_password)
 			throws InterruptedException {
 
@@ -215,6 +230,15 @@ public class HomePage {
 
 	}
 
+	/*
+	 * This test case is to check the add to cart functionality
+	 * 
+	 * ====Steps: 1. Navigate to home page 2. Mouse hover to Dress, click on
+	 * casual dresses 3. Scroll down and select item 4. Add the item in the cart
+	 * 5. Get product name on details page 6. Mouse hover to View cart, click on
+	 * product link 7. Verify product name
+	 * 
+	 */
 	public void addToCartForUnauthneticatedUser() throws InterruptedException {
 
 		// Generate mouse hover event on main menu to click on sub menu
@@ -223,12 +247,12 @@ public class HomePage {
 		log.info("Mouse hover on menu Dresses -at web element:" + moveOnMenu.toString());
 		log.info("and clicking on sub menu Casual Dresses   -at web element:" + clickToOption.toString());
 		String pageTitle = driver.getTitle();
-		//Verifying page title
+		// Verifying page title
 		Assert.assertEquals("Casual Dresses - My Store", pageTitle);
-		log.info("User is redirected on page :-Casual Dresses - My Store" );
+		log.info("User is redirected on page :-Casual Dresses - My Store");
 		// To scroll down web page by 600 pixels In x(vertical) direction.
 		// You can y parameter to scroll page In horizontal direction.
-		log.info("Scrolling down the page to view products..." );
+		log.info("Scrolling down the page to view products...");
 		JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		javascript.executeScript("window.scrollBy(0,600)", "");
 		// Generate mouse hover event on main menu to click on sub menu
@@ -237,18 +261,21 @@ public class HomePage {
 		log.info("and clicking on Add To cart   -at web element:" + moveToProductAddToCart.toString());
 		Thread.sleep(3000);
 		String addedProductName = productNameOnPopup.getText().toString();
-		log.info("Product name:- "+addedProductName+" :is added to cart --at web element:" + productNameOnPopup.toString());
+		log.info("Product name:- " + addedProductName + " :is added to cart --at web element:"
+				+ productNameOnPopup.toString());
 		closePopup.click();
 		log.info("clicking on close button -at web element:" + closePopup.toString());
-		// Generate mouse hover event on product image to click on add to cart button
+		// Generate mouse hover event on product image to click on add to cart
+		// button
 		actions.moveToElement(moveToViewCart).moveToElement(moveToProductNameInCart).click().perform();
 		log.info("Mouse hover on View cart -at web element:" + moveToViewCart.toString());
 		log.info("Clicking on cart product   -at web element:" + moveToProductNameInCart.toString());
 		String productNameDispalyedOnDetailsPage = productNameOnDetailsPage.getText().toString();
-		log.info("Product name:- "+productNameDispalyedOnDetailsPage+" :is displayed on details page --at web element:" + productNameOnDetailsPage.toString());
-		//Verifying product name added on cart
+		log.info("Product name:- " + productNameDispalyedOnDetailsPage
+				+ " :is displayed on details page --at web element:" + productNameOnDetailsPage.toString());
+		// Verifying product name added on cart
 		Assert.assertEquals(addedProductName, productNameDispalyedOnDetailsPage);
-				
+
 	}
 
 	public void clickLogout() {
@@ -261,25 +288,6 @@ public class HomePage {
 		String userName = newCreatedUsername.getText();
 		log.info("returning the username :" + userName + " - at web element path :-" + newCreatedUsername.toString());
 		return userName;
-	}
-
-	public void switchToFrame() {
-		driver.switchTo().frame(homePageIframe);
-		log.info("switching to the iframe....");
-	}
-
-	public void switchToDefaultContent() {
-		driver.switchTo().defaultContent();
-		log.info("switching to the default content....");
-	}
-
-	public boolean getRegistrationSuccess() {
-		try {
-			userNameField.isDisplayed();
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
 	}
 
 }

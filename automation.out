@@ -226,3 +226,14 @@ Session ID: 85a784cc-d45a-42aa-9802-6a6b1280ace4
 2018-05-13 19:30:59 INFO  HomePage:214 - Clicking on Register button - at web element path :-Proxy element for: DefaultElementLocator 'By.id: submitAccount'
 2018-05-13 19:30:59 INFO  HomePage:262 - returning the username :demoFName demoLName - at web element path :-[[FirefoxDriver: firefox on WINDOWS (9884cfb7-b17a-4578-98cc-fd018a97bb5c)] -> xpath: //*[@id='header']/div[2]/div/div/nav/div[1]/a/span]
 2018-05-13 19:30:59 INFO  TC002_verifyRegistrationProcess:42 - ======= Ending test execution: verifyingRegistration ===========
+2018-05-13 22:59:10 INFO  TestBase:54 - Navigating to url :-  http://automationpractice.com/index.php
+2018-05-13 22:59:41 INFO  TC001_verifyBackNavigation:40 - ========== Start Testcase excection: verifyBackNavigation =========  
+2018-05-13 22:59:45 INFO  MyAccountPage:52 - Clicked on Sign in and  -at web element :- [[FirefoxDriver: firefox on WINDOWS (7d84ef00-2509-4776-9132-741f1e18214c)] -> link text: Sign in]
+2018-05-13 22:59:46 INFO  MyAccountPage:54 - Entring email address: falguncontractor87@gmail.com -at web element :- [[FirefoxDriver: firefox on WINDOWS (7d84ef00-2509-4776-9132-741f1e18214c)] -> xpath: //*[@id='email']]
+2018-05-13 22:59:46 INFO  MyAccountPage:56 - Entring  password: lsspl123 -at web element :- [[FirefoxDriver: firefox on WINDOWS (7d84ef00-2509-4776-9132-741f1e18214c)] -> xpath: //*[@id='passwd']]
+2018-05-13 23:00:49 INFO  MyAccountPage:58 - Clicked on submit button -at web element :- Proxy element for: DefaultElementLocator 'By.id: SubmitLogin'
+2018-05-13 23:01:51 INFO  MyAccountPage:72 - Clicking on order list option - at web element path :-Proxy element for: DefaultElementLocator 'By.cssSelector: a[title="Orders"] > span'
+2018-05-13 23:01:54 INFO  MyAccountPage:76 - Clicking on back to account page option - at web element path :-[[FirefoxDriver: firefox on WINDOWS (7d84ef00-2509-4776-9132-741f1e18214c)] -> xpath: //*[@id='center_column']/ul/li[1]/a/span]
+2018-05-13 23:02:56 INFO  MyAccountPage:80 - Clicking on credit slip option - at web element path :-Proxy element for: DefaultElementLocator 'By.xpath: //*[@id='center_column']/div/div[1]/ul/li[2]/a/span'
+2018-05-13 23:02:58 INFO  MyAccountPage:84 - Clicking on back to account page option - at web element path :-[[FirefoxDriver: firefox on WINDOWS (7d84ef00-2509-4776-9132-741f1e18214c)] -> xpath: //*[@id='center_column']/ul/li[1]/a/span]
+2018-05-13 23:02:58 INFO  TC001_verifyBackNavigation:44 - ========== End Testcase excection: verifyBackNavigation =========  
