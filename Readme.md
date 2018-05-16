@@ -1,10 +1,13 @@
 Selenium WebDriver:
+
 - The web drive setup is based on the FirefoxDriver, and i have not configured DesiredCapabilitiesFactory for this task.
 
 Page Objects Pattern:
+
 - page object pattern is used to have reusable WebElements/small helper methods separated from actual test classes and give the opportunity to have nice structured and easily readable tests (without the overhead of BDD-Frameworks like Cucumber or JBehave).
 
 Project overview:
+
 This project is e-commerce web application.
 We have created 4 different test cases with selenium in Page Objects Pattern
  - 3 test cases with Homepage (contains invalid sign in, registration and add to cart)
@@ -16,17 +19,17 @@ This is the base method - com.pom.automation.brabblerPro.testBase.TestBase.java
 
 --------------------------------
 
-Prerequisites
+Prerequisites:
 
-Machine: Windows 7, Vista or Windows 10
-Browser: Firefox version 33 to 43
-Java JDK version: 1.8.0_161
-java Editor: Eclipse
+Machine- Windows 7, Vista or Windows 10
+Browser Firefox version 33 to 43
+Java JDK version- 1.8.0_161
+java Editor- Eclipse
 Maven (if using eclipse, install Maven Integration for Eclipse)
 TestNG
 --------------------------------------------------
 Please configure machine environment with following steps: 
-Prerequisite : 
+
 1. JAVA Set up (java Editor: Eclipse)
 Before proceeding, Please make sure you have installed JAVA and set JAVA environmental variables in your machine.
 Please check how to install JAVA and set the environmental variables. 
@@ -44,6 +47,7 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 
 -------------------------------
 Here are some details and how to run the test project:
+
 – The project is Maven based, so you need to have Maven installed on your computer.
 – The project needs to be run with Java 8.
 – The project uses: TestNG for the assertions, Selenium, FireFox browser to run the tests (so you need to have FireFox installed on your computer).
@@ -56,6 +60,7 @@ Here are some details and how to run the test project:
 The following describes how to set up a Processing Library project in Eclipse and build it successfully, and to make your Library ready for distribution. :
 
 Import to Eclipse:
+
 To import the template project into Eclipse: using a Git fork
 
 - Clone your new repository to your Eclipse workspace.
@@ -80,7 +85,8 @@ Save the settings. (
 3. For running a test is done: open project left click and select  Run As –> TestNG test.
 
 
-To Check Test Run result.
+To Check Test Run result:
+
 HTML test report will be available at( Location path :< user dir> \test-output\emailable-report.html)
 All Pass and failed test cases are available with screenshot.
 All the test cases are the pass result  and the result is also visible in TestNG 
