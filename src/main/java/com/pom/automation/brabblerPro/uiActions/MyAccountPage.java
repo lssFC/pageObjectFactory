@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.pom.automation.brabblerPro.homePage.TC001_VerifyLoginWithInvalidCredentials;
+
 
 public class MyAccountPage {
 
@@ -40,12 +40,23 @@ public class MyAccountPage {
 	 * Creating Homepage constructor which takes the argument we are
 	 * initializing the web element object at the runtime (It initializes all
 	 * the web elements)
+	 * @ Parameter  webdriver
+	 * @ return
+	 * @ throws 
 	 */
 
 	public MyAccountPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+
+
+	/*
+	 * Signin method
+	 * @ Parameter  String , String
+	 * @ return
+	 * @ throws 
+	 */
 
 	public void loginToApplication(String emailAddress, String password) {
 		signIn.click();
@@ -63,7 +74,9 @@ public class MyAccountPage {
 	 * Navigate to Order History Page 2. On My account page 3. Navigate to Order
 	 * Slip Page 4. Check the page title 5. Verify back navigation works
 	 * correctly.
-	 * 
+	 * @ Parameter 
+	 * @ return
+	 * @ throws 
 	 */
 
 	public void backNavigation() {

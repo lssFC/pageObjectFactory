@@ -104,6 +104,8 @@ public class HomePage {
 	 * Creating Homepage constructor which takes the argument we are
 	 * initializing the web element object at the runtime (It initializes all
 	 * the web elements)
+	 * @ Parameter driver
+	 * 
 	 */
 
 	public HomePage(WebDriver driver) {
@@ -116,6 +118,7 @@ public class HomePage {
 	 * 
 	 * ===Steps: 1. Navigate to home page 2. Click on sign in link 3. Enter
 	 * email address and password field 4. click on submit button
+	 * @ Parameter string, string
 	 * 
 	 */
 	public void loginToApplication(String emailAddress, String password) {
@@ -141,7 +144,7 @@ public class HomePage {
 	 * ===Steps: 1. Navigate to home page 2. Click on sign in link 3. Enter new
 	 * email address for registration 4. On registration page, enter all valid
 	 * and mandatory fields
-	 * 
+	 * @ Parameter string, string, string, string
 	 */
 	public void registeringUser(String val_firstName, String val_lastName, String val_emailAddress, String val_password)
 			throws InterruptedException {
@@ -194,7 +197,9 @@ public class HomePage {
 	 * casual dresses 3. Scroll down and select item 4. Add the item in the cart
 	 * 5. Get product name on details page 6. Mouse hover to View cart, click on
 	 * product link 7. Verify product name
-	 * 
+	 * @ Parameter 
+	 * @ return
+	 * @ throws InterruptedException
 	 */
 	public void addToCartForUnauthneticatedUser() throws InterruptedException {
 
@@ -235,6 +240,8 @@ public class HomePage {
 
 	}
 
+	
+	// Get logged in username string from web element
 	public String getUserName() {
 		String userName = newCreatedUsername.getText();
 		log.info("returning the username :" + userName + " - at web element path :-" + newCreatedUsername.toString());

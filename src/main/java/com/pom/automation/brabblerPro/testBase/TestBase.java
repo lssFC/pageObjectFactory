@@ -23,6 +23,7 @@ public class TestBase {
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 
 	public WebDriver driver;
+	// Base URL
 	String url = "http://automationpractice.com/index.php";
 	String browser = "firefox";
 
@@ -36,7 +37,8 @@ public class TestBase {
 
 	/**
 	 * Please try either 1. webdriver.gecko.driver OR
-	 * 2.webdriver.firefox.marionette properties in windows machine.
+	 * 2.webdriver.firefox.marionette properties in windows machine. @ Parameter
+	 * WebDriver @ return @ throws
 	 */
 
 	// Method for : Selecting browser
@@ -56,6 +58,10 @@ public class TestBase {
 	}
 
 	// Launching the main baseUrl
+	/*  @ Parameter String
+	 *  @ return
+	 *  @ throws
+	 */
 	public void getUrl(String url) {
 		log.info("Navigating to url :-  " + url);
 		driver.get(url);
@@ -64,6 +70,10 @@ public class TestBase {
 	}
 
 	// Method for : Capture and restore screenshots when test passes or fails
+	/*  @ Parameter String
+	 *  @ return
+	 *  @ throws
+	 */
 	public void getScreenShot(String name) {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
